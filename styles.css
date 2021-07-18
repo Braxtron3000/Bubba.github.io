@@ -16,6 +16,12 @@ h1{
     color:red;
 }
 
+#nav{
+    width: 50%;
+    background-color: blue;
+    float: right;
+}
+
 #nav li{
     display: inline;
 }
