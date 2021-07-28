@@ -1,5 +1,10 @@
+:root{
+    --banner_height:450px;
+}
+
 body{
     margin: 0px;
+    overflow: hidden;
 }
 body *{
     margin: 0px;
@@ -7,21 +12,67 @@ body *{
 
 #banner{
     background-image: url("background.jpg");
+    height: var(--banner_height);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
-h1{
-    color:red;
+#banner_title{
+    position: absolute;
+    top:calc(var(--banner_height) - 140px);
+    color: white;
+    font-weight: bold;
+    left: 20px;
+}
+#banner_title h1{
+    font-size: 50px;
+}
+#banner_title h2{
+    position: relative;
+    left: 10px;
 }
 
 #nav{
-    width: 50%;
-    background-color: blue;
     float: right;
+    padding:20px;
+    font-size: 20px;
 }
 
 #nav li{
     display: inline;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
 }
+#nav li:first-child{
+    text-decoration: underline;
+}
+
+/*EMAIL ME*/
+#nav li:last-child{
+    margin-right: 10px;
+    background-color: #072F94;
+    word-spacing: 3px;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+/*items*/
+#topics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 50px;
+}
+
+.topic{
+    padding: 50px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+
